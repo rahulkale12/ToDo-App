@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To_Do Data</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<div class="container">
+    <div class="table-heading">
+        <h1>To Do Data</h1>
+    </div>
+    <div class="btn-add">
+        <a href="/create/"><button>ADD</button></a>
+    </div>
+   <div class="table_body">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>To_DO List</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                 </tr>
+            </thead>
+            <tbody>
+                {% for read in reads %}
+                <tr>
+                    <td>{{forloop.counter}}</td>
+                    <td>{{read.todo}}</td>
+                    <td><input type="checkbox"></td>
+                    
+                    <td class="btn"> 
+                    <a href="/edit/{{read.id}}" class="edit-btn"><input type="button" value="EDIT"></a>
+                    <a href="/delete/{{read.id}}" class="del-btn"><input type="button" value="DELETE"></a>
+                    </td>
+                    
+                </tr>
+
+                {% endfor %}
+            </tbody>
+
+        </table>
+    </div>
+</div>
+
+    
+</body>
+</html>

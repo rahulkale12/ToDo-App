@@ -1,0 +1,173 @@
+/* Read template Start */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(177, 142, 142);
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+.container{
+    width: 60%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: auto;
+    
+}
+
+
+
+.table-heading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.table_body table{
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 1px solid black;
+}
+
+.table_body th, .table_body td{
+    text-align: center;
+    padding: 10px;
+    font-size: 22px;
+    
+}
+
+.table_body th {
+    background-color: #f2f2f2;
+    font-size: 1.5rem;
+}
+
+.table_body tr:nth-child(even){
+    background-color: #f2f2f2;;
+}
+
+.table_body td input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.edit-btn input, .del-btn input{
+    background-color: #007bff;
+    width: 6rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;   
+    text-align: center;
+    
+}
+
+.del-btn input{
+    background-color: red;
+}
+
+.edit-btn input:hover {
+    background-color: #0056b3;
+}
+
+.del-btn input:hover {
+    background-color: #c82333;
+} 
+
+/* Read template end */
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* create template start */
+
+.container-create{
+    width: 20%;
+    background-color: rgb(67, 192, 241);
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black ;
+    
+}
+
+.todo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    
+}
+
+.todo label{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+.todo input{
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 6px;
+    font-size: 1.5rem;
+}  
+
+.btn-submit{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.btn-submit input{
+    width: 6rem;
+    font-size: 1.2rem;
+    padding: 7px;
+    background-color: rgb(12, 154, 12);
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+::placeholder{
+    font-size: 1.5rem;
+}
+
+ 
+
+
+
+/* create template end */
+
+.container .btn-add a button{
+    width: 5rem;
+    font-size: 1.2rem;
+    padding: 7px;
+    background-color: rgb(12, 154, 12);
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
