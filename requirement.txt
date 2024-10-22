@@ -1,0 +1,19 @@
+Requirements:
+To run this project, you'll need the following:
+
+Python 3.x: The app is built using Python, so ensure you have the correct version installed.
+Django: The framework used for backend development.
+PostgreSQL: The database used for data storage.
+Pipenv/Virtualenv: For creating and managing the virtual environment.
+Database connection : pip install psycopg2
+Css/Js : To use external css and js files create static folder in the project and run the given command for static.
+Git: To clone the repository.
+
+#To use css and js files :
+python manage.py collectstatic
+
+# Install pipenv (if not already installed)
+pip install pipenv
+
+# Install PostgreSQL
+# Refer to PostgreSQL official documentation for installation instructions based on your OS
